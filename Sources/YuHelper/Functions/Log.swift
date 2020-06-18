@@ -17,7 +17,7 @@ func log(_ object:Any,
     function:String = #function) {
     
     let fileMsg = (file).split(separator: "/").last!
-    let swiftInfo:String = fileMsg + ": \(line) " + function
+    let swiftInfo:String = "➷ " + fileMsg + " - line \(line) - " + function
    NSLog(swiftInfo)
     print("\t", object)
     
